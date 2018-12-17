@@ -5,6 +5,10 @@ echo.
 
 call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86
 
+mkdir bin
+copy /Y lib\SDL2\x86\SDL2.dll bin\SDL2.dll
+copy /Y wait_file.py bin\wait_file.py
+
 :loop
 cls
 
